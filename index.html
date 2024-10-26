@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>This is a test!!!!!</h1>
+    <meta name="author" content="Nishchal Bhujel">
+    <meta name="description" content="This is a sample website created to demonstrate my HTML and CSS skills.">
+    <meta name="keywords" content="HTML, CSS, WebDesign, WebMarkup">
+    <title>Amsterdam Eats - Home</title>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="TopHeader">
+        <span class="logoContainer">
+            <img src="img/logo.png" alt="Amsterdam Eats Logo" title="Amsterdam eats logo where the city architecture is in the plate with spoon and fork" class="logo">
+            <span class="logoText">AMSTERDAM EATS</span>
+        </span>
+        
+        <nav class="topNav">
+            <ul>
+                <li><a href="index.html" class="active">Home Page</a></li>
+                <li><a href="dutch-cuisine.html">Dutch Cuisine</a></li>
+                <li><a href="fine-dining.html">Fine Dining</a></li>
+                <li><a href="vegan.html">Vegan</a></li>
+                <li><a href="cafes.html">Cafes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcomeSection">
+            <h1>Welcome To Amsterdam Eats!</h1>
+            <p id="page-description">
+                Discover the best spots to enjoy delicious food near the Rijksmuseum. This website offers 
+                top recommendations for Dutch cuisine, fine dining, vegan spots, and cafes near Rijksmuseum 
+                Amsterdam, helping tourists find the best dining options in the city.
+            </p>
+        </section>
+
+        <section class="mainContentSection">
+            <article class="mainContentItem">
+                <figure>
+                    <img src="img/dutchcuisine.jpg" alt="Dutch Cuisine dish image" title="famous Dutch cuisine Poffertjes in a plate" class="restaurants-image">
+                    <figcaption>
+                        <a href="dutch-cuisine.html" class="restaurants-type">Dutch Cuisine</a>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="mainContentItem">
+                <figure>
+                    <img src="img/fineDining.jpg" alt="Fine Dining dish image" title="well decorated foods for fine dining" class="restaurants-image">
+                    <figcaption>
+                        <a href="fine-dining.html" class="restaurants-type">Fine Dining</a>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="mainContentItem">
+                <figure>
+                    <img src="img/vegan.jpg" alt="Vegan dish image" title="vegan dish in bowls with different mixed variety" class="restaurants-image">
+                    <figcaption>
+                        <a href="vegan.html" class="restaurants-type">Vegan</a>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="mainContentItem">
+                <figure>
+                    <img src="img/Coffee.jpg" alt="Coffee image" title="picture of coffee on the table" class="restaurants-image">
+                    <figcaption>
+                        <a href="cafes.html" class="restaurants-type">Cafes</a>
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <article id="pop" class="popWrap">
+            <aside class="popUp">
+                <a class="close" href="#pop">x</a>
+                <p><strong>Cookies?</strong></p>
+            </aside>
+        </article>
+    </main>
+
+    <footer>
+        <nav class="navFooter">
+            <ul>
+                <li><a href="homepage.html" class="active">Home Page</a></li>
+                <li><a href="dutch-cuisine.html">Dutch Cuisine</a></li>
+                <li><a href="fine-dining.html">Fine Dining</a></li>
+                <li><a href="vegan.html">Vegan</a></li>
+                <li><a href="cafes.html">Cafes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Amsterdam Eats. All rights reserved.</p>
+    </footer>
 </body>
 </html>
