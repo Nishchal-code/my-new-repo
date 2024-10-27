@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="author" content="Nishchal Bhujel">
+    <meta name="description" content="This is a sample website created to demonstrate my HTML and CSS skills.">
+    <meta name="keywords" content="HTML, CSS, WebDesign, WebMarkup,">
+
+    <title>Contact Us - Amsterdam Eats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="TopHeader">
+        <span class="logoContainer">
+            <img src="img/logo.png" alt="Amsterdam Eats Logo" title="Amsterdam eats logo where the city architecture is in the plate with spoon and fork" class="logo">
+            <span class="logoText">AMSTERDAM EATS</span>
+        </span>
+        
+        <nav class="topNav">
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="dutch-cuisine.html">DUTCH CUISINE</a></li>
+                <li><a href="fine-dining.html">FINE DINING</a></li>
+                <li><a href="vegan.html">VEGAN</a></li>
+                <li><a href="cafes.html">CAFES</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contactPage">
+        <h1>Contact Us</h1>
+        <p class="mandatory">Fields with * are mandatory</p>
+
+        <form action="https://coolinhollanddemo.azurewebsites.net/" method="post">
+            <label>Title*</label>
+            <span class="radioGroup">
+                <input type="radio" name="title" value="Miss" required> Miss
+                <input type="radio" name="title" value="Mr"> Mr
+                <input type="radio" name="title" value="Mrs"> Mrs
+            </span>
+
+            <label for="name">Name*</label>
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+            <label for="email">E-mail*</label>
+            <input type="email" name="email" id="email" placeholder="example@example.com" required>
+
+            <label for="phone">Phone Number*</label>
+            <input type="tel" name="phone" id="phone" placeholder="+31 0123456789" required>
+
+            <label for="message">Message*</label>
+            <textarea name="message" id="message" placeholder="Type your message here." required></textarea>
+
+            <button type="submit" class="submit">Send</button>
+        </form>
+    </main>
+
+    <footer>
+        <nav class="navFooter">
+            <ul>
+                <li><a href="index.html" >Home Page</a></li>
+                <li><a href="dutch-cuisine.html">DUTCH CUISINE</a></li>
+                <li><a href="fine-dining.html">FINE DINING</a></li>
+                <li><a href="vegan.html">VEGAN</a></li>
+                <li><a href="cafes.html">CAFES</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Amsterdam Eats. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
